@@ -1,0 +1,134 @@
+.result {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: rgb(14, 70, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 3px solid rgb(255, 251, 0);
+    font-size: 1rem;
+    text-align: center;
+    color: yellow;
+}
+
+.result-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 3000;
+    backdrop-filter: blur(8px);
+    padding: 1rem;
+
+}
+
+.result-container {
+    position: relative;
+    width: 500px;
+    height: fit-content;
+    margin: 1rem;
+    border: 4px dotted #4f0088;
+
+    background-color: rgb(255, 255, 49);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.result-speech {
+    font-size: 1.8rem;
+    font-family: cursive;
+    padding-left: 2rem;
+    padding-right: 2rem;
+color: #4f0088;
+
+}
+
+.receipt-header {
+    font-size: 1rem;
+
+    margin-top: 1rem;
+    margin-bottom: .1rem;
+}
+
+.receipt-item {
+
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    font-family: monospace;
+}
+
+.receipt-box .cart-item {
+   display: flex;
+    font-family: monospace;
+   
+}
+
+.receipt-box .cart-item .space {
+   
+    font-size: 10px;
+    margin-right: 5px;
+   
+
+}
+
+
+
+
+.receipt-box .cart-item .item-title {
+    font-size: .8rem;
+}
+
+
+.receipt-box .cart-item .cart-quantity {
+    font-size: .8rem;
+}
+
+.receipt-box .cart-item {
+    gap: 4rem;
+}
+.receipt-box .cart-item .receipt-price{
+    font-size: 10px;
+}
+
+.result-cta {
+    display: flex;
+    gap: 2rem;
+}
+
+.spend-again,
+.result-share {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: .5rem;
+    background-color: aqua;
+    cursor: pointer;
+    text-align: center;
+}
+
+.result-bottom .total,
+.result-bottom .percent {
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 680px){
+    .result{
+        width: 2rem;
+        height: 2rem;
+    }
+}
