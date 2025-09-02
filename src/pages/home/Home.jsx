@@ -215,17 +215,18 @@ const Home = () => {
                             animateToNumber={total}
                             useThousandsSeparator={true}  // Enables thousands separators (replaces your includeComma)
                             locale="en-IN"
-                           
+
                             fontStyle={{
                                 fontSize: '1.6rem',
                                 fontWeight: 'bold',
                                 color: 'black'
                             }}
-                            configs={(number, index) => ({
+                            transitions={(index) => ({
+                                type: "spring",  // Required for physics-based animation
                                 mass: 1,
-                                tension: 130,
-                                friction: 40,
-                                // OR use duration: 500 (don’t mix duration with mass/tension/friction)
+                                stiffness: 130,  // Maps to your 'tension'
+                                damping: 40,     // Maps to your 'friction'
+                                duration: index + 0.5  // Staggered per digit; base on your 500ms (adjust for feel)
                               })}
 
                         />
