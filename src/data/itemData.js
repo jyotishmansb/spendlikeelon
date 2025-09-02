@@ -27,7 +27,17 @@
  import rr from '/rr.png';
  import plays from '/plays.jpg';
  import tsla from '/tsla.png';
-
+ 
+ import antiaging from '/antiaging.jpg';
+ import battery from '/battery.jpg';
+ import dgf from '/dgf.jpg';
+ import nuclear from '/nuclear.jpg';
+ import rolex from '/rolex.jpg';
+ import smartwatch from '/smartwatch.jpg';
+ import scooty from '/scooty.png';
+ import chai from '/chai.jpg';
+ 
+ 
 
  export  const itemData = [
     {
@@ -53,9 +63,16 @@
         domain:'fun'
 
     }, 
-
     {
         id:4,
+        name:"Chai",
+        price:10,
+        image:chai,
+        domain:'fun'
+    }, 
+
+    {
+        id:5,
         name:"Pizza",
         price:100,
         image:pizza,
@@ -63,7 +80,7 @@
     }, 
 
     {
-        id:5,
+        id:6,
         name:"Burger",
         price:60,
         image:burger,
@@ -71,14 +88,14 @@
     }, 
 
     {
-        id:6,
+        id:7,
         name:"momo",
         price:50,
         image:momo,
         domain:'fun'
     },
     {
-        id:7,
+        id:8,
         name:"private jet",
         price:50000000,
         image:jet,
@@ -86,7 +103,7 @@
     }, 
 
     {
-        id:8,
+        id:9,
         name:"Robots",
         price:200000,
         image:robots,
@@ -94,14 +111,14 @@
     }, 
 
     {
-        id:9,
+        id:10,
         name:"Yatch",
         price:2000000,
         image:yatch,
         domain:'fun'
     },
     {
-        id:10,
+        id:11,
         name:"Space Station",
         price:10000000000,
         image:spaceStation,
@@ -110,7 +127,7 @@
 
 
     {
-        id:11,
+        id:12,
         name:"marsColony",
         price:9000000000000,
         image:marsColony,
@@ -118,7 +135,7 @@
     }, 
 
     {
-        id:12,
+        id:13,
         name:"laptop",
         price:70000,
         image:laptop,
@@ -126,14 +143,14 @@
     }, 
 
     {
-        id:13,
+        id:14,
         name:"iphone",
         price:100000,
         image:iphone,
         domain:'fun'
     },
     {
-        id:14,
+        id:15,
         name:"pc",
         price:200000,
         image:pc,
@@ -141,14 +158,14 @@
     },
 
     {
-        id:15,
+        id:16,
         name:"travel",
         price:300000,
         image:travel,
         domain:'fun'
     },
     {
-        id:16,
+        id:17,
         name:"house",
         price:500000,
         image:house,
@@ -156,7 +173,7 @@
     },
 
     {
-        id:17,
+        id:18,
         name:"cycle",
         price:1200,
         image:cycle,
@@ -164,7 +181,7 @@
     }, 
 
     {
-        id:18,
+        id:19,
         name:"rocket",
         price:20000000,
         image:rocket,
@@ -172,7 +189,7 @@
     },
 
     {
-        id:19,
+        id:20,
         name:"ipl team",
         price:7000000,
         image:ipl,
@@ -180,7 +197,7 @@
     }, 
 
     {
-        id:20,
+        id:21,
         name:"openAI",
         price:26288715000000,
         image:openai,
@@ -189,7 +206,7 @@
     
 
     {
-        id:21,
+        id:22,
         name:"land",
         price:100000000,
         image:land,
@@ -197,14 +214,14 @@
     }, 
 
     {
-        id:22,
+        id:23,
         name:"books",
         price:500,
         image:books,
         domain:'tech'
     },
     {
-        id:23,
+        id:24,
         name:"ott",
         price:5000,
         image:ott,
@@ -212,14 +229,14 @@
     },
 
     {
-        id:24,
+        id:25,
         name:"drone",
         price:20000,
         image:drone,
         domain:'tech'
     },
     {
-        id:25,
+        id:26,
         name:"lamborghini",
         price:50000000,
         image:lambo,
@@ -227,7 +244,7 @@
     },
 
     {
-        id:26,
+        id:27,
         name:"tesla",
         price:7000000,
         image:tsla,
@@ -236,12 +253,74 @@
     },
 
     {
-        id:27,
+        id:28,
         name:"ps5",
         price:50000,
         image:plays,
         domain:'fun'
     },
+
+    {
+        id:29,
+        name:"Rolex",
+        price:6000000,
+        image:rolex,
+        domain:'fun'
+       
+    },
+
+    {
+        id:30,
+        name:"Smartwatch",
+        price:50000,
+        image:smartwatch,
+        domain:'tech'
+    },
+
+    {
+        id:31,
+        name:"AI waifu",
+        price:8000000,
+        image:dgf,
+        domain:'fun'
+       
+    },
+
+    {
+        id:32,
+        name:"EV Scooty",
+        price:90000,
+        image:scooty,
+        domain:'tech'
+    },
+
+    {
+        id:33,
+        name:"Anti aging Research",
+        price:7000000,
+        image:antiaging,
+        domain:'tech'
+       
+    },
+
+    {
+        id:34,
+        name:"iinvest Battery tech",
+        price:50000,
+        image:battery,
+        domain:'tech'
+    },
+
+
+
+    {
+        id:35,
+        name:"iinvest in nuclear energy",
+        price:5000000,
+        image:nuclear,
+        domain:'tech'
+    },
+
 
 
 

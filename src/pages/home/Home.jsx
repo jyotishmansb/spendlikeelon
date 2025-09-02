@@ -12,7 +12,7 @@ import Result from '../../component/result/Result';
 import { VscSend } from "react-icons/vsc";
 import { FaShoppingCart } from "react-icons/fa";
 
-
+import AnimatedNumbers from "react-animated-numbers";
 
 const Home = () => {
     const totalMoney = 33375000000000;
@@ -210,14 +210,40 @@ const Home = () => {
                 </div>
                 <div className="middle">
                     <h1>Spend Like Elon</h1>
-                    <div className="money">₹{total.toLocaleString('en-IN')}</div>
+                    <div className="money">₹
+                        <AnimatedNumbers
+                            animateToNumber={total}
+                            useThousandsSeparator={true}  // Enables thousands separators (replaces your includeComma)
+                            locale="en-IN"
+                           
+                            fontStyle={{
+                                fontSize: '1.6rem',
+                                fontWeight: 'bold',
+                                color: 'black'
+                            }}
+                            configs={{
+                               
+                                locale: 'en-IN',
+                                mass: .5,
+                                tension: 230,
+                                friction: 40,
+                                duration: 100
+                            }}
+
+                        />
+
+
+
+
+
+                    </div>
                     <div className="money-percent">{spentPercent === 0 || spentPercent === 100
                         ? spentPercent.toFixed(0) : spentPercent.toFixed(5)} % spent</div>
                 </div>
                 <div className="right">
-                <div className="result" onClick={handleResult}>End</div>
-                    <div className="cart" onClick={openSidebar}><FaShoppingCart size={20}/></div>
-                   
+                    <div className="result" onClick={handleResult}>End</div>
+                    <div className="cart" onClick={openSidebar}><FaShoppingCart size={20} /></div>
+
                 </div>
             </div>
             <div className="items-container">
