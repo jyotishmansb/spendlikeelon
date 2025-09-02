@@ -46,7 +46,7 @@
     z-index: 2000;
     background-color: rgb(246, 255, 0);
     font-size: 1.2rem;
-    font-family: cursive;
+    font-family: sans-serif;
     animation: pop .5s ease;
 }
 
