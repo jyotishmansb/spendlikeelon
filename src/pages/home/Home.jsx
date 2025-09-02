@@ -221,17 +221,14 @@ const Home = () => {
                                 fontWeight: 'bold',
                                 color: 'black'
                             }}
-                            transitions={(index) => ({
-                                type: "spring",
-                                duration: index * 0.3 + 0.5,  // Simplified timing
-                                // These spring properties might need different names depending on the library
-                                config: {
-                                    mass: 1,
-                                    tension: 130,  // Some libraries use tension/friction
-                                    friction: 40
-                                }
-                            })}
-
+                            configs={[
+                                { mass: 1, tension: 230, friction: 140 },
+                                { mass: 1, tension: 180, friction: 130 },
+                                { mass: 1, tension: 280, friction: 90 },
+                                { mass: 1, tension: 180, friction: 135 },
+                                { mass: 1, tension: 260, friction: 100 },
+                                { mass: 1, tension: 210, friction: 180 },
+                            ]}
                         />
 
 
