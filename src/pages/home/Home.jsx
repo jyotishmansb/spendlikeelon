@@ -221,14 +221,13 @@ const Home = () => {
                                 fontWeight: 'bold',
                                 color: 'black'
                             }}
-                            configs={[
-                                { mass: 1, tension: 230, friction: 140 },
-                                { mass: 1, tension: 180, friction: 130 },
-                                { mass: 1, tension: 280, friction: 90 },
-                                { mass: 1, tension: 180, friction: 135 },
-                                { mass: 1, tension: 260, friction: 100 },
-                                { mass: 1, tension: 210, friction: 180 },
-                            ]}
+                            transitions={(index) => ({
+                                type: "spring",
+                                mass: 1,
+                                stiffness: 130,  // Controls speed/snappiness (higher = faster)
+                                damping: 40,     // Controls oscillation decay (lower = bouncier)
+                                delay: index * 0.05  // Staggers animation start per digit (e.g., 50ms offset)
+                              })}
                         />
 
 
