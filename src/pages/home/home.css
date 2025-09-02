@@ -25,7 +25,7 @@
 }
 
 .middle h1 {
-    font-family: cursive;
+    font-family: sans-serif;
     text-align: center;
     color: yellow;
     font-size: 1.5rem;
@@ -163,7 +163,7 @@
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-family: cursive, sans-serif;
+    font-family: sans-serif;
     border: 3px solid rgb(255, 251, 0);
 
 }
@@ -180,7 +180,7 @@
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-family: cursive, sans-serif;
+    font-family:  sans-serif;
     border: 1px solid rgb(255, 251, 0);
 
 }
@@ -247,14 +247,14 @@
     font-size: 1.4rem;
     color: rgb(0, 0, 0);
     text-transform: capitalize;
-    font-family: cursive, sans-serif;
+    font-family:  sans-serif;
 }
 
 .price {
     font-size: 1.3rem;
     font-weight: bold;
     color: rgb(0, 0, 0);
-    font-family: cursive, sans-serif;
+    font-family:  sans-serif;
 }
 
 .quantity {
