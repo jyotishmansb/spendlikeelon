@@ -221,14 +221,12 @@ const Home = () => {
                                 fontWeight: 'bold',
                                 color: 'black'
                             }}
-                            configs={{
-                               
-                                locale: 'en-IN',
-                                mass: .5,
-                                tension: 230,
+                            configs={(number, index) => ({
+                                mass: 1,
+                                tension: 130,
                                 friction: 40,
-                                duration: 100
-                            }}
+                                // OR use duration: 500 (don’t mix duration with mass/tension/friction)
+                              })}
 
                         />
 
