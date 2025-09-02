@@ -113,9 +113,6 @@ const Home = () => {
         }
 
 
-
-
-
         // Occasionally show excited message
         if (Math.random() > 0.8) {
             return {
@@ -215,7 +212,7 @@ const Home = () => {
                         ? spentPercent.toFixed(0) : spentPercent.toFixed(5)} % spent</div>
                 </div>
                 <div className="right">
-                    <div className="result" onClick={handleResult}>End</div>
+                    <div className="result" onClick={handleResult}>Result</div>
                     <div className="cart" onClick={openSidebar}><FaShoppingCart size={20} /></div>
 
                 </div>
