@@ -10,6 +10,7 @@ import Sidebar from '../../component/sidebar/Sidebar';
 import { getRandomMessage } from '../../helper/message';
 import Result from '../../component/result/Result';
 import { VscSend } from "react-icons/vsc";
+import { FaShoppingCart } from "react-icons/fa";
 
 
 
@@ -214,8 +215,9 @@ const Home = () => {
                         ? spentPercent.toFixed(0) : spentPercent.toFixed(5)} % spent</div>
                 </div>
                 <div className="right">
-                    <div className="cart" onClick={openSidebar}>Cart</div>
-                    <div className="result" onClick={handleResult}>End</div>
+                <div className="result" onClick={handleResult}>End</div>
+                    <div className="cart" onClick={openSidebar}><FaShoppingCart size={20}/></div>
+                   
                 </div>
             </div>
             <div className="items-container">

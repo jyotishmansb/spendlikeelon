@@ -335,8 +335,8 @@
 
     .elon-image {
 
-        width: 3rem;
-        height: 3rem;
+        width: 5rem;
+        height: 5rem;
 
 
     }
@@ -355,7 +355,7 @@
 
     .middle {
         align-items: center;
-        gap: .2rem;
+        gap: .6rem;
         padding-top: 5px;
         padding-bottom: 5px;
 
@@ -364,7 +364,7 @@
     .middle h1 {
         width: fit-content;
         margin-top: 5px;
-        font-size: 1rem;
+        font-size: 1.4rem;
 
     }
 
@@ -377,9 +377,9 @@
 
     .money {
         width: fit-content;
-        padding: 0rem .4rem;
+        padding: .2rem .5rem;
         border-radius: 20px;
-        font-size: 1rem;
+        font-size: 1.2rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -389,7 +389,7 @@
 
     .money-percent {
         width: fit-content;
-        padding: 0rem .4rem;
+        padding: .2rem .5rem;
         border-radius: 10px;
         font-size: 1rem;
         display: flex;
@@ -405,8 +405,8 @@
     }
 
     .cart {
-        width: 2rem;
-        height: 2rem;
+        width: 3rem;
+        height: 3rem;
         font-size: .8rem;
     }
 
@@ -496,7 +496,7 @@
 
     .speech-box {
 
-        top: 55px;
+        top: 75px;
         left: 0px;
 
         border-radius: 10px;
