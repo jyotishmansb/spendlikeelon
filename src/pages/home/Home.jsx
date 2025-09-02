@@ -12,7 +12,6 @@ import Result from '../../component/result/Result';
 import { VscSend } from "react-icons/vsc";
 import { FaShoppingCart } from "react-icons/fa";
 
-import AnimatedNumbers from "react-animated-numbers";
 
 const Home = () => {
     const totalMoney = 33375000000000;
@@ -207,40 +206,10 @@ const Home = () => {
                         <div className="speech-arrow"></div>
                     </div>)}
 
-                </div>
+                </div> 
                 <div className="middle">
                     <h1>Spend Like Elon</h1>
-                    <div className="money">₹
-                        <AnimatedNumbers
-                            animateToNumber={total}
-                            useThousandsSeparator={true}  // Enables thousands separators (replaces your includeComma)
-                            locale="en-IN"
-
-                            fontStyle={{
-                                fontSize: '1.6rem',
-                                fontWeight: 'bold',
-                                color: 'black'
-                            }}
-                          
-
-
-                              transitions={(index) => ({
-                                type: "spring",
-                                mass: 1,
-                                stiffness: 130,
-                                damping: 40,
-                                // Replace 'duration' with 'delay' for staggering
-                                delay: index * 0.05, // Adjust the multiplier (0.05) to control the stagger speed
-                              })}
-
-
-
-                        />
-
-
-
-
-
+                    <div className="money">₹{total}
                     </div>
                     <div className="money-percent">{spentPercent === 0 || spentPercent === 100
                         ? spentPercent.toFixed(0) : spentPercent.toFixed(5)} % spent</div>
