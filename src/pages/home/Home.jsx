@@ -221,12 +221,20 @@ const Home = () => {
                                 fontWeight: 'bold',
                                 color: 'black'
                             }}
-                            transitions={(index) => ({
+                          
+
+
+                              transitions={(index) => ({
                                 type: "spring",
                                 mass: 1,
                                 stiffness: 130,
                                 damping: 40,
+                                // Replace 'duration' with 'delay' for staggering
+                                delay: index * 0.05, // Adjust the multiplier (0.05) to control the stagger speed
                               })}
+
+
+
                         />
 
 
