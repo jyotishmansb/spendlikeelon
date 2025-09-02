@@ -21,7 +21,7 @@ const Home = () => {
     const [showResult, setShowResult] = useState(false);
     const [speech, setSpeech] = useState({ show: false, text: '', type: '' });
     const [showWelcome, setShowWelcome] = useState(false);
-   
+
 
     const handleResult = () => {
         setShowResult(true)
@@ -55,7 +55,7 @@ const Home = () => {
     const getSpeechMessage = (price, total, name) => {
 
         const spentAmount = totalMoney - total
-       
+
         if (total < 100 && spentPercent > 95) {
             return {
                 text: getRandomMessage('almostBroke', name),
@@ -93,7 +93,7 @@ const Home = () => {
                 text: getRandomMessage('low', name),
                 type: 'low'
             };
-        } else if (price >= 1000 && price <5000) {
+        } else if (price >= 1000 && price < 5000) {
             return {
                 text: getRandomMessage('low', name),
                 type: 'low'
@@ -105,7 +105,7 @@ const Home = () => {
                 text: getRandomMessage('superHigh', name),
                 type: 'superHigh'
             };
-        }  else if (price >= 1000000 ) {
+        } else if (price >= 1000000) {
             return {
                 text: getRandomMessage('ultraHigh', name),
                 type: 'ultraHigh'
@@ -141,9 +141,9 @@ const Home = () => {
                     ...prevQty, [id]: prevQty[id] + 1
                 }));
 
-            setTotal(prev => prev - price); 
+            setTotal(prev => prev - price);
 
-            const message = getSpeechMessage(price,total , name)
+            const message = getSpeechMessage(price, total, name)
             setSpeech({ show: true, ...message })
 
 
@@ -190,11 +190,11 @@ const Home = () => {
         setIsSidebarOpen(true)
 
     }
-const closeSidebar =()=>{
-    document.body.style.overflow = '';
-    setIsSidebarOpen(false)
-}
-    const spentPercent =((totalMoney - total) / totalMoney) * 100;
+    const closeSidebar = () => {
+        document.body.style.overflow = '';
+        setIsSidebarOpen(false)
+    }
+    const spentPercent = ((totalMoney - total) / totalMoney) * 100;
 
     return (
         <div className="home">
@@ -210,12 +210,13 @@ const closeSidebar =()=>{
                 <div className="middle">
                     <h1>Spend Like Elon</h1>
                     <div className="money">₹{total.toLocaleString('en-IN')}</div>
-                    <div className="money-percent">{spentPercent === 0 || spentPercent === 100 
-                    ? spentPercent.toFixed(0): spentPercent.toFixed(5)} % spent</div>
+                    <div className="money-percent">{spentPercent === 0 || spentPercent === 100
+                        ? spentPercent.toFixed(0) : spentPercent.toFixed(5)} % spent</div>
                 </div>
-
-                <div className="cart" onClick={openSidebar}>Cart</div>
-                <div className="result"  onClick={handleResult}>End</div>
+                <div className="right">
+                    <div className="cart" onClick={openSidebar}>Cart</div>
+                    <div className="result" onClick={handleResult}>End</div>
+                </div>
             </div>
             <div className="items-container">
                 {
@@ -226,7 +227,7 @@ const closeSidebar =()=>{
                             handleSell={() => handleSell(price, id, name, qty)}
 
                         />
-  
+
                     })
                 }
             </div>
@@ -235,12 +236,12 @@ const closeSidebar =()=>{
 
             {<Sidebar total={totalMoney - total} isOpen={isSidebarOpen}
                 setIsSidebarOpen={closeSidebar} qty={qty} itemData={itemData}
-                 spentPercent={spentPercent} />}
+                spentPercent={spentPercent} />}
 
 
-            {showResult && <Result total={totalMoney - total} qty={qty} itemData={itemData} 
-            setShowResult={setShowResult} 
-                 spentPercent={spentPercent}/>}
+            {showResult && <Result total={totalMoney - total} qty={qty} itemData={itemData}
+                setShowResult={setShowResult}
+                spentPercent={spentPercent} />}
 
 
         </div>
