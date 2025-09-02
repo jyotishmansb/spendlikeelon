@@ -222,12 +222,15 @@ const Home = () => {
                                 color: 'black'
                             }}
                             transitions={(index) => ({
-                                type: "spring",  // Required for physics-based animation
-                                mass: 1,
-                                stiffness: 130,  // Maps to your 'tension'
-                                damping: 40,     // Maps to your 'friction'
-                                duration: index + 0.5  // Staggered per digit; base on your 500ms (adjust for feel)
-                              })}
+                                type: "spring",
+                                duration: index * 0.3 + 0.5,  // Simplified timing
+                                // These spring properties might need different names depending on the library
+                                config: {
+                                    mass: 1,
+                                    tension: 130,  // Some libraries use tension/friction
+                                    friction: 40
+                                }
+                            })}
 
                         />
 
