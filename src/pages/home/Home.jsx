@@ -224,9 +224,8 @@ const Home = () => {
                             transitions={(index) => ({
                                 type: "spring",
                                 mass: 1,
-                                stiffness: 130,  // Controls speed/snappiness (higher = faster)
-                                damping: 40,     // Controls oscillation decay (lower = bouncier)
-                                delay: index * 0.05  // Staggers animation start per digit (e.g., 50ms offset)
+                                stiffness: 130,
+                                damping: 40,
                               })}
                         />
 
