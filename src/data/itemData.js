@@ -305,7 +305,7 @@
 
     {
         id:34,
-        name:"iinvest Battery tech",
+        name:"invest Battery tech",
         price:50000,
         image:battery,
         domain:'tech'
@@ -315,7 +315,7 @@
 
     {
         id:35,
-        name:"iinvest in nuclear energy",
+        name:"invest in nuclear energy",
         price:5000000,
         image:nuclear,
         domain:'tech'
