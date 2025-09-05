@@ -46,7 +46,7 @@ export const speechData = {
     high: [
       "Even Bezos is raising an eyebrow",
       "Expensive? That's cute. Ever priced a rocket engine?",
-      "Still cheaper than sending a car to space! *chef's kiss*",
+      "Still cheaper than sending a car to space!",
       "That's almost a whole Bitcoin! ...wait, what's Bitcoin worth today?",
       "Big purchase! This is extremely hardcore!",
       "At this price, I expect it to land itself like Falcon 9!"

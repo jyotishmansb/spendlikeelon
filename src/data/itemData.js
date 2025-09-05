@@ -191,7 +191,7 @@
     {
         id:20,
         name:"ipl team",
-        price:7000000,
+        price:700000000,
         image:ipl,
         domain:'fun'
     }, 
@@ -279,7 +279,7 @@
 
     {
         id:31,
-        name:"AI waifu",
+        name:"Digital Waifu",
         price:8000000,
         image:dgf,
         domain:'fun'
@@ -306,7 +306,7 @@
     {
         id:34,
         name:"invest Battery tech",
-        price:50000,
+        price:5000000,
         image:battery,
         domain:'tech'
     },
