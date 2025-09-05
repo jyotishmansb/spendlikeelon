@@ -1,7 +1,8 @@
 import { useRef, useState } from 'react';
 import './result.css';
 import { finalMessages } from '../../data/finalSpeech';
-import * as htmlToImage from 'html-to-image'
+import * as htmlToImage from 'html-to-image';
+import { FaXTwitter } from "react-icons/fa6";
 
 
 const Result = ({ total, id, qty, itemData, setShowResult, spentPercent }) => {
@@ -105,7 +106,10 @@ const Result = ({ total, id, qty, itemData, setShowResult, spentPercent }) => {
 
                 </div>
 
-
+<div className="madeby">
+<a href="https://x.com/Jyotishman2u">made by <span> <FaXTwitter /></span></a>
+<p>help me to become a Billionarie</p>
+</div>
 
             </div>
 
